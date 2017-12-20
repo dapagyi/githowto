@@ -19,5 +19,5 @@ function change(x){
 }
 
 for (var j=1; j<=1000000; j++){
-    if (isPalindrom(j))  console.log(change(j));
+    if (j%7 == 0 && isPalindrom(j))  console.log(change(j));
 }
