@@ -7,3 +7,17 @@ function isPalindrom(x){
     }
     return true;
 }
+
+function change(x){
+    var jegyek = x.toString().split('');
+    var jegyekSz = ['nulla','egy','kettő','három','négy','öt','hat','hét','nyolc','kilenc'];
+    var ret = '';
+    for (var j=0; j<jegyek.length; j++){
+        ret += jegyekSz[jegyek[j]];
+    }
+    return ret;
+}
+
+for (var j=1; j<=1000000; j++){
+    if (isPalindrom(j))  console.log(change(j));
+}
